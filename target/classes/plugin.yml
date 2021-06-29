@@ -1,0 +1,7 @@
+name: PacketAddonDrupi
+version: 1.0
+main: me.losin6450.packetaddondrupi.PacketAddonDrupi
+authors: [ Losin6450 ]
+description: An addon that utilizes protocollibs packet system
+depend:
+  - ProtocolLib
