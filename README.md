@@ -3,7 +3,7 @@
 Requires:
 ProtocolLib
 
-Example Usage:
+Example:
 
 ```javascript
 const PacketSystem = Java.type('me.losin6450.packetaddondrupi.PacketSystem');
