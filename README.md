@@ -1,5 +1,8 @@
 # PacketAddonDrupi
 
+Requires:
+ProtocolLib
+
 Example Usage:
 
 ```javascript
@@ -11,6 +14,6 @@ const ProtocolLibrary = Java.type('com.comphenix.protocol.ProtocolLibrary');
 ProtocolLibrary.getProtocolManager().removePacketListeners(plugin);
 
 PacketSystem.addPacketListener(plugin, ListenerPriority.NORMAL, PacketType.Play.Client.CHAT, event => {}, event => {
-    server.broadcastMessage(`${event.getPacket().getType()}`);
+    server.broadcastMessage(`${event.getPlayer().getName()} wrote ${event.getPacket().getStrings().read(0)}`);
 });
 ```
